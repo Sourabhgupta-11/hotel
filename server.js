@@ -3,6 +3,7 @@ const app=express();
 const db=require('./db')
 const bodyparser=require('body-parser')
 app.use(bodyparser.json())
+require('dotenv').config();
 
 app.get('/',function(req,res){
     res.send('Welcome');
